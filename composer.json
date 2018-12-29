@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-        "swiftmailer/swiftmailer": "^6.1"
+        "swiftmailer/swiftmailer": "^6.1",
+        "andronova-yuliya/sender-packagist": "dev-master"
     },
     "autoload": {
         "psr-4": {
