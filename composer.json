@@ -1,0 +1,21 @@
+{
+    "name": "phpstudent/e-shop-project",
+    "description": "TestProject",
+    "type": "library",
+    "authors": [
+        {
+            "name": "AndronovaYuliya",
+            "email": "andron39933993@gmail.com"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sender\\":"src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable":true
+}
