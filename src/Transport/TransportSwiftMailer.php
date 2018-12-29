@@ -1,5 +1,6 @@
 <?php
 namespace Sender\Transport;
+
 use Swift_SmtpTransport;
 use Swift_Mailer;
 use Swift_Message;

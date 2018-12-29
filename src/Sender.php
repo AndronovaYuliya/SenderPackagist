@@ -5,7 +5,7 @@ namespace Sender;
 use Sender\Template\Templater;
 use Sender\Transport\TransportSwiftMailer;
 
-class SenderMail
+class Sender
 {
     public static function sendMsg()
     {
