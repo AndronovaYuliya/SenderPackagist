@@ -35,7 +35,7 @@ class Sender
         try{
             $sender->send($message);
         }catch (Swift_TransportException $ex) {
-            echo "test";
+            header('Location: /');
         }
     }
 }
