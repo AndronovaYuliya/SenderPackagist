@@ -4,6 +4,8 @@ namespace Sender;
 
 use Sender\Template\Templater;
 use Sender\Transport\TransportSwiftMailer;
+use Swift_TransportException;
+
 
 class Sender
 {
@@ -30,6 +32,10 @@ class Sender
         $message=$pathSenderTransport::sendMsg($template);
 
         //send
-        $sender->send($message);
+        try{
+            $sender->send($message);
+        }catch (Swift_TransportException $ex) {
+            echo "test";
+        }
     }
 }
