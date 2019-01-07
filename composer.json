@@ -1,6 +1,7 @@
 {
     "name": "andronova-yuliya/sender-packagist",
-    "description": "TestProject",
+    "description": "TestProject. To the root of your site you need to add config/config.ini",
+
     "type": "library",
     "authors": [
         {

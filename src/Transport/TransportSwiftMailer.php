@@ -11,7 +11,7 @@ class TransportSwiftMailer
     public static function createTransport($config)
     {
         self::$config=$config;
-        $transport=(new Swift_SmtpTransport($config['host'], $config['port']))
+        $transport=(new Swift_SmtpTransport($config['hostmail'], $config['port']))
             ->setUsername($config['email'])
             ->setPassword($config['pass'])
             ->setEncryption($config['encryption'])

@@ -12,17 +12,17 @@ class Sender
     public static function sendMsg()
     {
         //config + type of sender
-        $config=require(dirname(__DIR__).'/config.php');
+        $config=parse_ini_file(dirname(__FILE__,5).'/config/config.ini');
 
         //name of senderTransport (string"TransportSwiftMailer")
-        $nameTransport=key($config);
+        $nameTransport=$config['nametransport'];
 
         //Sender\Transport
         $pathSenderTransport='Sender\Transport\\'.$nameTransport;
 
 
         //object(Swift_Mailer)
-        $sender=$pathSenderTransport::createTransport($config[$nameTransport]);
+        $sender=$pathSenderTransport::createTransport($config);
 
         //body of letter
         $template=Templater::template();
