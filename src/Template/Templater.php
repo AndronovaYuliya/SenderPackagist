@@ -11,10 +11,10 @@ class Templater
     public static function template()
     {
         end($_POST );
-        $file = '/View/'.key($_POST).'.php';
+        $key=key($_POST);
+        $file = '/View/'.$_POST[$key].'.php';
         ob_start();
         extract($_POST, EXTR_OVERWRITE);
-
         require __DIR__.$file;
         return ob_get_clean();
     }
