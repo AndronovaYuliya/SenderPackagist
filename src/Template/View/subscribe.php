@@ -1,1 +1,1 @@
-<h1>Новый подписчик <?php echo $_POST['name']?>, email: <?php echo $_POST['email']?>!</h1>
+<h1>Новый подписчик <?php echo $login?>, email: <?php echo $email?>!</h1>
